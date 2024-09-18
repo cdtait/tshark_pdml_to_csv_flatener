@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/wireshark or at https://gitlab.com/wireshark/wireshark/-/raw/master/pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/3.4.4" time="Wed Sep 18 15:24:36 2024" capture_file="/home/ctait/git/tick_to_trade/simulation/cme_backtest_engine/efvisubscriber_cmemdp3_mcastsocketpublisher_release_nologging_fastercode/test5/exchange_20201208181511.911521251.pcap">
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="222">
+    <field name="num" pos="0" show="154" showname="Number" value="9a" size="222"/>
+    <field name="len" pos="0" show="222" showname="Frame Length" value="de" size="222"/>
+    <field name="caplen" pos="0" show="222" showname="Captured Length" value="de" size="222"/>
+    <field name="timestamp" pos="0" show="Dec  8, 2020 18:18:39.607589000 GMT" showname="Captured Time" value="1607451519.607589000" size="222"/>
+  </proto>
+  <proto name="frame" showname="Frame 154: 222 bytes on wire (1776 bits), 222 bytes captured (1776 bits)" size="222" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: Dec  8, 2020 18:18:39.607589000 GMT" size="0" pos="0" show="Dec  8, 2020 18:18:39.607589000 GMT"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_epoch" showname="Epoch Time: 1607451519.607589000 seconds" size="0" pos="0" show="1607451519.607589000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000087000 seconds" size="0" pos="0" show="0.000087000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000087000 seconds" size="0" pos="0" show="0.000087000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 199.321479000 seconds" size="0" pos="0" show="199.321479000"/>
+    <field name="frame.number" showname="Frame Number: 154" size="0" pos="0" show="154"/>
+    <field name="frame.len" showname="Frame Length: 222 bytes (1776 bits)" size="0" pos="0" show="222"/>
+    <field name="frame.cap_len" showname="Capture Length: 222 bytes (1776 bits)" size="0" pos="0" show="222"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="0"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="0"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:udp:cme.futures.mdp3.sbe.v1.5.lua" size="0" pos="0" show="eth:ethertype:ip:udp:cme.futures.mdp3.sbe.v1.5.lua"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: Solarfla_07:fa:a9 (00:0f:53:07:fa:a9), Dst: IPv4mcast_1f:05 (01:00:5e:00:1f:05)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: IPv4mcast_1f:05 (01:00:5e:00:1f:05)" size="6" pos="0" show="01:00:5e:00:1f:05" value="01005e001f05">
+      <field name="eth.dst_resolved" showname="Destination (resolved): IPv4mcast_1f:05" hide="yes" size="6" pos="0" show="IPv4mcast_1f:05" value="01005e001f05"/>
+      <field name="eth.dst.oui" showname="Destination OUI: 01:00:5e" hide="yes" size="3" pos="0" show="65630" value="01005e"/>
+      <field name="eth.addr" showname="Address: IPv4mcast_1f:05 (01:00:5e:00:1f:05)" size="6" pos="0" show="01:00:5e:00:1f:05" value="01005e001f05"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): IPv4mcast_1f:05" hide="yes" size="6" pos="0" show="IPv4mcast_1f:05" value="01005e001f05"/>
+      <field name="eth.addr.oui" showname="Address OUI: 01:00:5e" hide="yes" size="3" pos="0" show="65630" value="01005e"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="0" value="0" unmaskedvalue="01005e"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="0" value="0" unmaskedvalue="01005e"/>
+      <field name="eth.dst.ig" showname=".... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)" size="3" pos="0" show="1" value="1" unmaskedvalue="01005e"/>
+      <field name="eth.ig" showname=".... ...1 .... .... .... .... = IG bit: Group address (multicast/broadcast)" hide="yes" size="3" pos="0" show="1" value="1" unmaskedvalue="01005e"/>
+    </field>
+    <field name="eth.src" showname="Source: Solarfla_07:fa:a9 (00:0f:53:07:fa:a9)" size="6" pos="6" show="00:0f:53:07:fa:a9" value="000f5307faa9">
+      <field name="eth.src_resolved" showname="Source (resolved): Solarfla_07:fa:a9" hide="yes" size="6" pos="6" show="Solarfla_07:fa:a9" value="000f5307faa9"/>
+      <field name="eth.src.oui" showname="Source OUI: 00:0f:53 (Solarflare Communicat" hide="yes" size="3" pos="6" show="3923" value="000f53"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): Solarflare Communications Inc." hide="yes" size="6" pos="6" show="Solarflare Communications Inc." value="000f5307faa9"/>
+      <field name="eth.addr" showname="Address: Solarfla_07:fa:a9 (00:0f:53:07:fa:a9)" size="6" pos="6" show="00:0f:53:07:fa:a9" value="000f5307faa9"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): Solarfla_07:fa:a9" hide="yes" size="6" pos="6" show="Solarfla_07:fa:a9" value="000f5307faa9"/>
+      <field name="eth.addr.oui" showname="Address OUI: 00:0f:53 (Solarflare Communicat" hide="yes" size="3" pos="6" show="3923" value="000f53"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): Solarflare Communications Inc." hide="yes" size="6" pos="6" show="Solarflare Communications Inc." value="000f5307faa9"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="0" value="0" unmaskedvalue="000f53"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="0" value="0" unmaskedvalue="000f53"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="0" value="0" unmaskedvalue="000f53"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="0" value="0" unmaskedvalue="000f53"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x00000800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 25.25.40.134, Dst: 224.0.31.5" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00000000" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 208" size="2" pos="16" show="208" value="00d0"/>
+    <field name="ip.id" showname="Identification: 0xb3c1 (46017)" size="2" pos="18" show="0x0000b3c1" value="b3c1"/>
+    <field name="ip.flags" showname="Flags: 0x40, Don&#x27;t fragment" size="1" pos="20" show="0x00000040" value="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="0" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="1" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="0" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="Fragment Offset: 0" size="2" pos="20" show="0" value="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 1" size="1" pos="22" show="1" value="01"/>
+    <field name="ip.proto" showname="Protocol: UDP (17)" size="1" pos="23" show="17" value="11"/>
+    <field name="ip.checksum" showname="Header Checksum: 0x84b7 [validation disabled]" size="2" pos="24" show="0x000084b7" value="84b7"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 25.25.40.134" size="4" pos="26" show="25.25.40.134" value="19192886"/>
+    <field name="ip.addr" showname="Source or Destination Address: 25.25.40.134" hide="yes" size="4" pos="26" show="25.25.40.134" value="19192886"/>
+    <field name="ip.src_host" showname="Source Host: 25.25.40.134" hide="yes" size="4" pos="26" show="25.25.40.134" value="19192886"/>
+    <field name="ip.host" showname="Source or Destination Host: 25.25.40.134" hide="yes" size="4" pos="26" show="25.25.40.134" value="19192886"/>
+    <field name="ip.dst" showname="Destination Address: 224.0.31.5" size="4" pos="30" show="224.0.31.5" value="e0001f05"/>
+    <field name="ip.addr" showname="Source or Destination Address: 224.0.31.5" hide="yes" size="4" pos="30" show="224.0.31.5" value="e0001f05"/>
+    <field name="ip.dst_host" showname="Destination Host: 224.0.31.5" hide="yes" size="4" pos="30" show="224.0.31.5" value="e0001f05"/>
+    <field name="ip.host" showname="Source or Destination Host: 224.0.31.5" hide="yes" size="4" pos="30" show="224.0.31.5" value="e0001f05"/>
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 42972, Dst Port: 14314" size="8" pos="34">
+    <field name="udp.srcport" showname="Source Port: 42972" size="2" pos="34" show="42972" value="a7dc"/>
+    <field name="udp.dstport" showname="Destination Port: 14314" size="2" pos="36" show="14314" value="37ea"/>
+    <field name="udp.port" showname="Source or Destination Port: 42972" hide="yes" size="2" pos="34" show="42972" value="a7dc"/>
+    <field name="udp.port" showname="Source or Destination Port: 14314" hide="yes" size="2" pos="36" show="14314" value="37ea"/>
+    <field name="udp.length" showname="Length: 188" size="2" pos="38" show="188" value="00bc"/>
+    <field name="udp.checksum" showname="Checksum: 0x4172 [unverified]" size="2" pos="40" show="0x00004172" value="4172"/>
+    <field name="udp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="40" show="2"/>
+    <field name="udp.stream" showname="Stream index: 1" size="0" pos="42" show="1"/>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="udp.time_relative" showname="Time since first frame: 1.292705000 seconds" size="0" pos="34" show="1.292705000"/>
+      <field name="udp.time_delta" showname="Time since previous frame: 0.000087000 seconds" size="0" pos="34" show="0.000087000"/>
+    </field>
+    <field name="udp.payload" showname="UDP payload (180 bytes)" size="180" pos="42" show="46:b5:b7:00:52:7e:aa:25:0a:57:b0:13:38:00:0b:00:20:00:01:00:05:00:db:73:a8:25:0a:57:b0:13:84:00:00:20:00:01:80:da:21:10:14:00:00:00:08:00:00:00:50:b5:02:00:79:92:02:00:02:00:00:00:01:01:31:00:00:00:00:00:38:00:0b:00:20:00:01:00:05:00:63:c9:a8:25:0a:57:b0:13:84:00:00:20:00:01:00:63:93:09:14:00:00:00:04:00:00:00:bc:48:00:00:8c:86:32:00:02:00:00:00:01:01:30:00:00:00:00:00:38:00:0b:00:20:00:01:00:05:00:d3:1d:a9:25:0a:57:b0:13:84:00:00:20:00:01:00:63:93:09:14:00:00:00:05:00:00:00:bc:48:00:00:8d:86:32:00:03:00:00:00:01:01:30:00:00:00:00:00" value="46b5b700527eaa250a57b01338000b00200001000500db73a8250a57b01384000020000180da2110140000000800000050b502007992020002000000010131000000000038000b0020000100050063c9a8250a57b013840000200001006393091400000004000000bc4800008c86320002000000010130000000000038000b00200001000500d31da9250a57b013840000200001006393091400000005000000bc4800008d863200030000000101300000000000"/>
+  </proto>
+  <proto name="fake-field-wrapper">
+    <field name="_ws.lua.fake" showname="Wireshark Lua fake item" hide="yes" size="0" pos="42" show="" value=""/>
+  </proto>
+  <proto name="cme.futures.mdp3.sbe.v1.5.lua" showname="Cme Futures Mdp3 Sbe 1.5 (180 Bytes)" size="180" pos="42">
+    <field name="cme.futures.mdp3.sbe.v1.5.binarypacketheader" showname="Binary Packet Header: " size="12" pos="42" show="" value="46b5b700527eaa250a57b013">
+      <field name="cme.futures.mdp3.sbe.v1.5.messagesequencenumber" showname="Message Sequence Number: 12039494" size="4" pos="42" show="12039494" value="46b5b700"/>
+      <field name="cme.futures.mdp3.sbe.v1.5.sendingtime" showname="Sending Time: 1418729583714926162" size="8" pos="46" show="1418729583714926162" value="527eaa250a57b013"/>
+    </field>
+    <field name="cme.futures.mdp3.sbe.v1.5.message" showname="Message: " size="56" pos="54" show="" value="38000b00200001000500db73a8250a57b01384000020000180da2110140000000800000050b5020079920200020000000101310000000000">
+      <field name="cme.futures.mdp3.sbe.v1.5.messagesize" showname="Message Size: 56" size="2" pos="54" show="56" value="3800"/>
+      <field name="cme.futures.mdp3.sbe.v1.5.messageheader" showname="Message Header: " size="8" pos="56" show="" value="0b00200001000500">
+        <field name="cme.futures.mdp3.sbe.v1.5.blocklength" showname="Block Length: 11" size="2" pos="56" show="11" value="0b00"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.templateid" showname="Template Id: Md Incremental Refresh Book (32)" size="2" pos="58" show="32" value="2000"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.schemaid" showname="Schema Id: 1" size="2" pos="60" show="1" value="0100"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.version" showname="Version: 5" size="2" pos="62" show="5" value="0500"/>
+      </field>
+      <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbook32" showname="Md Incremental Refresh Book 32: " size="46" pos="64" show="" value="db73a8250a57b01384000020000180da2110140000000800000050b5020079920200020000000101310000000000">
+        <field name="cme.futures.mdp3.sbe.v1.5.transacttime" showname="Transact Time: 1418729583714792411" size="8" pos="64" show="1418729583714792411" value="db73a8250a57b013"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.matcheventindicator" showname="Match Event Indicator: End Of Event|Last Quote Msg" size="1" pos="72" show="End Of Event|Last Quote Msg" value="84">
+          <field name="cme.futures.mdp3.sbe.v1.5.endofevent" showname="1... .... = End Of Event: Yes (1)" size="1" pos="72" show="1" value="1" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.reserved" showname=".0.. .... = Reserved: No (0)" size="1" pos="72" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.recoverymsg" showname="..0. .... = Recovery Msg: No (0)" size="1" pos="72" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastimpliedmsg" showname="...0 .... = Last Implied Msg: No (0)" size="1" pos="72" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.laststatsmsg" showname=".... 0... = Last Stats Msg: No (0)" size="1" pos="72" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastquotemsg" showname=".... .1.. = Last Quote Msg: Yes (1)" size="1" pos="72" show="1" value="1" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastvolumemsg" showname=".... ..0. = Last Volume Msg: No (0)" size="1" pos="72" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lasttrademsg" showname=".... ...0 = Last Trade Msg: No (0)" size="1" pos="72" show="0" value="0" unmaskedvalue="84"/>
+        </field>
+        <field name="cme.futures.mdp3.sbe.v1.5.padding2" showname="Padding 2: 00 00" size="2" pos="73" show="30:30" value="0000"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbookgroups" showname="M D Incremental Refresh Book Groups: " size="35" pos="75" show="" value="20000180da2110140000000800000050b5020079920200020000000101310000000000">
+          <field name="cme.futures.mdp3.sbe.v1.5.groupsize" showname="Group Size: " size="3" pos="75" show="" value="200001">
+            <field name="cme.futures.mdp3.sbe.v1.5.blocklength" showname="Block Length: 32" size="2" pos="75" show="32" value="2000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.numingroup" showname="Num In Group: 1" size="1" pos="77" show="1" value="01"/>
+          </field>
+          <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbookgroup" showname="M D Incremental Refresh Book Group: " size="32" pos="78" show="" value="80da2110140000000800000050b5020079920200020000000101310000000000">
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrypx" showname="Md Entry Px: 8617" size="8" pos="78" show="86170000000" value="80da211014000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrysize" showname="Md Entry Size: 8" size="4" pos="86" show="8" value="08000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.securityid" showname="Security Id: 177488" size="4" pos="90" show="177488" value="50b50200"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.rptseq" showname="Rpt Seq: 168569" size="4" pos="94" show="168569" value="79920200"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.numberoforders" showname="Number Of Orders: 2" size="4" pos="98" show="2" value="02000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdpricelevel" showname="Md Price Level: 1" size="1" pos="102" show="1" value="01"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdupdateaction" showname="Md Update Action: Change (1)" size="1" pos="103" show="1" value="01"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrytype" showname="Md Entry Type: Offer (1)" size="1" pos="104" show="1" value="31"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.padding5" showname="Padding 5: 00 00 00 00 00" size="5" pos="105" show="30:30:20:30:30" value="0000000000"/>
+          </field>
+        </field>
+      </field>
+    </field>
+    <field name="cme.futures.mdp3.sbe.v1.5.message" showname="Message: " size="56" pos="110" show="" value="38000b0020000100050063c9a8250a57b013840000200001006393091400000004000000bc4800008c863200020000000101300000000000">
+      <field name="cme.futures.mdp3.sbe.v1.5.messagesize" showname="Message Size: 56" size="2" pos="110" show="56" value="3800"/>
+      <field name="cme.futures.mdp3.sbe.v1.5.messageheader" showname="Message Header: " size="8" pos="112" show="" value="0b00200001000500">
+        <field name="cme.futures.mdp3.sbe.v1.5.blocklength" showname="Block Length: 11" size="2" pos="112" show="11" value="0b00"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.templateid" showname="Template Id: Md Incremental Refresh Book (32)" size="2" pos="114" show="32" value="2000"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.schemaid" showname="Schema Id: 1" size="2" pos="116" show="1" value="0100"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.version" showname="Version: 5" size="2" pos="118" show="5" value="0500"/>
+      </field>
+      <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbook32" showname="Md Incremental Refresh Book 32: " size="46" pos="120" show="" value="63c9a8250a57b013840000200001006393091400000004000000bc4800008c863200020000000101300000000000">
+        <field name="cme.futures.mdp3.sbe.v1.5.transacttime" showname="Transact Time: 1418729583714814307" size="8" pos="120" show="1418729583714814307" value="63c9a8250a57b013"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.matcheventindicator" showname="Match Event Indicator: End Of Event|Last Quote Msg" size="1" pos="128" show="End Of Event|Last Quote Msg" value="84">
+          <field name="cme.futures.mdp3.sbe.v1.5.endofevent" showname="1... .... = End Of Event: Yes (1)" size="1" pos="128" show="1" value="1" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.reserved" showname=".0.. .... = Reserved: No (0)" size="1" pos="128" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.recoverymsg" showname="..0. .... = Recovery Msg: No (0)" size="1" pos="128" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastimpliedmsg" showname="...0 .... = Last Implied Msg: No (0)" size="1" pos="128" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.laststatsmsg" showname=".... 0... = Last Stats Msg: No (0)" size="1" pos="128" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastquotemsg" showname=".... .1.. = Last Quote Msg: Yes (1)" size="1" pos="128" show="1" value="1" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastvolumemsg" showname=".... ..0. = Last Volume Msg: No (0)" size="1" pos="128" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lasttrademsg" showname=".... ...0 = Last Trade Msg: No (0)" size="1" pos="128" show="0" value="0" unmaskedvalue="84"/>
+        </field>
+        <field name="cme.futures.mdp3.sbe.v1.5.padding2" showname="Padding 2: 00 00" size="2" pos="129" show="30:30" value="0000"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbookgroups" showname="M D Incremental Refresh Book Groups: " size="35" pos="131" show="" value="200001006393091400000004000000bc4800008c863200020000000101300000000000">
+          <field name="cme.futures.mdp3.sbe.v1.5.groupsize" showname="Group Size: " size="3" pos="131" show="" value="200001">
+            <field name="cme.futures.mdp3.sbe.v1.5.blocklength" showname="Block Length: 32" size="2" pos="131" show="32" value="2000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.numingroup" showname="Num In Group: 1" size="1" pos="133" show="1" value="01"/>
+          </field>
+          <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbookgroup" showname="M D Incremental Refresh Book Group: " size="32" pos="134" show="" value="006393091400000004000000bc4800008c863200020000000101300000000000">
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrypx" showname="Md Entry Px: 8606" size="8" pos="134" show="86060000000" value="0063930914000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrysize" showname="Md Entry Size: 4" size="4" pos="142" show="4" value="04000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.securityid" showname="Security Id: 18620" size="4" pos="146" show="18620" value="bc480000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.rptseq" showname="Rpt Seq: 3311244" size="4" pos="150" show="3311244" value="8c863200"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.numberoforders" showname="Number Of Orders: 2" size="4" pos="154" show="2" value="02000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdpricelevel" showname="Md Price Level: 1" size="1" pos="158" show="1" value="01"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdupdateaction" showname="Md Update Action: Change (1)" size="1" pos="159" show="1" value="01"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrytype" showname="Md Entry Type: Bid (0)" size="1" pos="160" show="0" value="30"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.padding5" showname="Padding 5: 00 00 00 00 00" size="5" pos="161" show="30:30:20:30:30" value="0000000000"/>
+          </field>
+        </field>
+      </field>
+    </field>
+    <field name="cme.futures.mdp3.sbe.v1.5.message" showname="Message: " size="56" pos="166" show="" value="38000b00200001000500d31da9250a57b013840000200001006393091400000005000000bc4800008d863200030000000101300000000000">
+      <field name="cme.futures.mdp3.sbe.v1.5.messagesize" showname="Message Size: 56" size="2" pos="166" show="56" value="3800"/>
+      <field name="cme.futures.mdp3.sbe.v1.5.messageheader" showname="Message Header: " size="8" pos="168" show="" value="0b00200001000500">
+        <field name="cme.futures.mdp3.sbe.v1.5.blocklength" showname="Block Length: 11" size="2" pos="168" show="11" value="0b00"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.templateid" showname="Template Id: Md Incremental Refresh Book (32)" size="2" pos="170" show="32" value="2000"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.schemaid" showname="Schema Id: 1" size="2" pos="172" show="1" value="0100"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.version" showname="Version: 5" size="2" pos="174" show="5" value="0500"/>
+      </field>
+      <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbook32" showname="Md Incremental Refresh Book 32: " size="46" pos="176" show="" value="d31da9250a57b013840000200001006393091400000005000000bc4800008d863200030000000101300000000000">
+        <field name="cme.futures.mdp3.sbe.v1.5.transacttime" showname="Transact Time: 1418729583714835923" size="8" pos="176" show="1418729583714835923" value="d31da9250a57b013"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.matcheventindicator" showname="Match Event Indicator: End Of Event|Last Quote Msg" size="1" pos="184" show="End Of Event|Last Quote Msg" value="84">
+          <field name="cme.futures.mdp3.sbe.v1.5.endofevent" showname="1... .... = End Of Event: Yes (1)" size="1" pos="184" show="1" value="1" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.reserved" showname=".0.. .... = Reserved: No (0)" size="1" pos="184" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.recoverymsg" showname="..0. .... = Recovery Msg: No (0)" size="1" pos="184" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastimpliedmsg" showname="...0 .... = Last Implied Msg: No (0)" size="1" pos="184" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.laststatsmsg" showname=".... 0... = Last Stats Msg: No (0)" size="1" pos="184" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastquotemsg" showname=".... .1.. = Last Quote Msg: Yes (1)" size="1" pos="184" show="1" value="1" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lastvolumemsg" showname=".... ..0. = Last Volume Msg: No (0)" size="1" pos="184" show="0" value="0" unmaskedvalue="84"/>
+          <field name="cme.futures.mdp3.sbe.v1.5.lasttrademsg" showname=".... ...0 = Last Trade Msg: No (0)" size="1" pos="184" show="0" value="0" unmaskedvalue="84"/>
+        </field>
+        <field name="cme.futures.mdp3.sbe.v1.5.padding2" showname="Padding 2: 00 00" size="2" pos="185" show="30:30" value="0000"/>
+        <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbookgroups" showname="M D Incremental Refresh Book Groups: " size="35" pos="187" show="" value="200001006393091400000005000000bc4800008d863200030000000101300000000000">
+          <field name="cme.futures.mdp3.sbe.v1.5.groupsize" showname="Group Size: " size="3" pos="187" show="" value="200001">
+            <field name="cme.futures.mdp3.sbe.v1.5.blocklength" showname="Block Length: 32" size="2" pos="187" show="32" value="2000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.numingroup" showname="Num In Group: 1" size="1" pos="189" show="1" value="01"/>
+          </field>
+          <field name="cme.futures.mdp3.sbe.v1.5.mdincrementalrefreshbookgroup" showname="M D Incremental Refresh Book Group: " size="32" pos="190" show="" value="006393091400000005000000bc4800008d863200030000000101300000000000">
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrypx" showname="Md Entry Px: 8606" size="8" pos="190" show="86060000000" value="0063930914000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrysize" showname="Md Entry Size: 5" size="4" pos="198" show="5" value="05000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.securityid" showname="Security Id: 18620" size="4" pos="202" show="18620" value="bc480000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.rptseq" showname="Rpt Seq: 3311245" size="4" pos="206" show="3311245" value="8d863200"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.numberoforders" showname="Number Of Orders: 3" size="4" pos="210" show="3" value="03000000"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdpricelevel" showname="Md Price Level: 1" size="1" pos="214" show="1" value="01"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdupdateaction" showname="Md Update Action: Change (1)" size="1" pos="215" show="1" value="01"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.mdentrytype" showname="Md Entry Type: Bid (0)" size="1" pos="216" show="0" value="30"/>
+            <field name="cme.futures.mdp3.sbe.v1.5.padding5" showname="Padding 5: 00 00 00 00 00" size="5" pos="217" show="30:30:20:30:30" value="0000000000"/>
+          </field>
+        </field>
+      </field>
+    </field>
+  </proto>
+</packet>
+
+
+</pdml>

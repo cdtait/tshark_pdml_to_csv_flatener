@@ -1,0 +1,5 @@
+frame.time,frame.number,cme.futures.mdp3.sbe.v1.5.mdentrypx,cme.futures.mdp3.sbe.v1.5.mdentrysize,me.futures.mdp3.sbe.v1.5.securityid,cme.futures.mdp3.sbe.v1.5.rptseq,cme.futures.mdp3.sbe.v1.5.numberoforders,cme.futures.mdp3.sbe.v1.5.mdpricelevel,cme.futures.mdp3.sbe.v1.5.mdupdateaction,cme.futures.mdp3.sbe.v1.5.mdentrytype
+"Dec  8, 2020 18:18:39.607589000 GMT",154,86170000000,8,177488,168569,2,1,1,0
+"Dec  8, 2020 18:18:39.607589000 GMT",154,86060000000,4,18620,3311244,3,1,1,0
+
+

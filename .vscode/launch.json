@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+
+            "program": "${workspaceFolder}/generate_flattened_xml_to_csv.py",
+            "args":["output2.pdml", "flattend_output2.csv", "--common_fields", "frame.time,frame.number,cme.futures.mdp3.sbe.v1.5.messagesequencenumber,cme.futures.mdp3.sbe.v1.5.sendingtime", 
+            "--unique_fields", "cme.futures.mdp3.sbe.v1.5.mdentrypx,cme.futures.mdp3.sbe.v1.5.mdentrysize,cme.futures.mdp3.sbe.v1.5.securityid,cme.futures.mdp3.sbe.v1.5.rptseq,cme.futures.mdp3.sbe.v1.5.numberoforders,cme.futures.mdp3.sbe.v1.5.mdpricelevel,cme.futures.mdp3.sbe.v1.5.mdupdateaction,cme.futures.mdp3.sbe.v1.5.mdentrytype",
+             ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
