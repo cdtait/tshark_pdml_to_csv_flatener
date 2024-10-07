@@ -1,0 +1,28 @@
+import pandas as pd
+
+# Create DataFrames from CSV strings
+df1 = pd.read_csv(pd.StringIO("""
+frame.time_epoch,frame.number,tcp.srcport
+1728229328.196964000,13,16012
+1728229328.222000000,15,16012
+1728229328.247035000,16,16012
+"""), sep=',')
+
+df2 = pd.read_csv(pd.StringIO("""
+frame.time_epoch,frame.number,tcp.srcport
+1728229328.197535000,14,14012
+1728229328.248033000,17,14012
+"""), sep=',')
+
+# Function to find the corresponding frame number in df1
+def find_corresponding_frame(df1, df2, frame_number):
+    # Find the previous frame number in df2
+    prev_frame = df2[df2['frame.number'] < frame_number]['frame.number'].max()
+    # Find the frame number in df1 that is greater than the previous frame number
+    result = df1[df1['frame.number'] > prev_frame]['frame.number'].min()
+    return result
+
+# Example usage
+frame_number_in_df2 = 17
+corresponding_frame_in_df1 = find_corresponding_frame(df1, df2, frame_number_in_df2)
+print(corresponding_frame_in_df1)  # Output: 15
